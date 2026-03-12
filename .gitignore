@@ -1,0 +1,6 @@
+android-sdk/
+ddandroid-sdk/
+node_modules/
+.gradle/
+*.aab
+*.zip

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <!-- Loading overlay -->
+    <View
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone"
+        android:elevation="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Header -->
+                <LinearLayout
+                    android:id="@+id/headerSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilVideoTopic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etVideoTopic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            tools:text="Cooking vegan meals for beginners"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvLoadingHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_hint"
+                        android:visibility="gone"
+                        android:layout_marginTop="8dp"/>
+
+                    <!-- Generate buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <Button
+                            android:id="@+id/btnGenerateTags"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tags"/>
+
+                        <Button
+                            android:id="@+id/btnGenerateTitles"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Titles"/>
+
+                        <Button
+                            android:id="@+id/btnGenerateDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Description"/>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+
+                <!-- Feature cards -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cardSeoTags"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="SEO Tags"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="#222222"/>
+
+                    <TextView
+                        android:id="@+id/cardHashtags"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Hashtags"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="#333333"/>
+
+                    <TextView
+                        android:id="@+id/cardViralTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Viral Titles"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="#444444"/>
+
+                    <TextView
+                        android:id="@+id/cardTrendingIdeas"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Trending Ideas"
+                        android:gravity="center_vertical"
+                        android:padding="12dp"
+                        android:background="#555555"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    android:layout_gravity="center"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Banner Ad -->
+        <FrameLayout
+            android:id="@+id/adBannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Outer circle background -->
+    <path
+        android:fillColor="#FF3D00"
+        android:pathData="M48,8 C26,8 8,26 8,48 C8,70 26,88 48,88 C70,88 88,70 88,48 C88,26 70,8 48,8Z" />
+
+    <!-- Inner dark circle -->
+    <path
+        android:fillColor="#1A0800"
+        android:pathData="M48,16 C30,16 16,30 16,48 C16,66 30,80 48,80 C66,80 80,66 80,48 C80,30 66,16 48,16Z" />
+
+    <!-- Play triangle / boost arrow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,32 L36,64 L68,48 Z" />
+
+    <!-- Accent lightning bolt -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M52,26 L42,50 L50,50 L44,70 L62,44 L54,44 Z" />
+
+</vector>

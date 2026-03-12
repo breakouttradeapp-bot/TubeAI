@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">TubeBoost AI</string>
+    <string name="app_tagline">AI Tools for Video Creators</string>
+    <string name="version_text">v1.0.0</string>
+
+    <!-- Main Screen -->
+    <string name="subtitle">Generate tags, titles &amp; descriptions instantly</string>
+    <string name="input_hint">Enter your video topic…</string>
+    <string name="loading_hint">⚡ AI is generating your SEO content…</string>
+    <string name="section_tools">VIDEO CREATOR TOOLS</string>
+
+    <!-- Buttons -->
+    <string name="btn_generate_tags">Generate Tags</string>
+    <string name="btn_generate_titles">Get Titles</string>
+    <string name="btn_generate_desc">Description</string>
+    <string name="btn_copy_tags">Copy All Tags</string>
+    <string name="btn_copy_titles">Copy Titles</string>
+    <string name="btn_copy_desc">Copy Description</string>
+    <string name="btn_copy_hashtags">Copy Hashtags</string>
+    <string name="btn_share">Share Result</string>
+    <string name="btn_generate_again">Generate Again</string>
+
+    <!-- Feature Cards -->
+    <string name="card_seo_tags">SEO Tags</string>
+    <string name="card_seo_tags_desc">30 ranked keywords</string>
+    <string name="card_hashtags">Hashtags</string>
+    <string name="card_hashtags_desc">15 trending tags</string>
+    <string name="card_viral_titles">Viral Titles</string>
+    <string name="card_viral_titles_desc">5 click-worthy titles</string>
+    <string name="card_trending">Trending Ideas</string>
+    <string name="card_trending_desc">Hot topics now</string>
+
+    <!-- Result Screen -->
+    <string name="result_title">Your SEO Results</string>
+    <string name="section_seo_tags">SEO Tags</string>
+    <string name="section_viral_titles">🔥 Viral Titles</string>
+    <string name="section_description">📝 Video Description</string>
+    <string name="section_hashtags"># Hashtags</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_topic">Please enter a video topic</string>
+    <string name="error_no_internet">No internet connection. Please check your network.</string>
+    <string name="error_api_failed">Unable to generate results. Please try again.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+
+    <!-- Privacy / Legal -->
+    <string name="privacy_policy">Privacy Policy · Terms of Service</string>
+    <string name="privacy_url">https://yourwebsite.com/privacy</string>
+
+    <!-- Accessibility -->
+    <string name="cd_logo">TubeBoost AI Logo</string>
+    <string name="cd_back">Go back</string>
+</resources>

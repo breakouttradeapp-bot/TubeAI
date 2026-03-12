@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+        <!-- Toolbar Title -->
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <!-- Topic Title -->
+        <TextView
+            android:id="@+id/tvTopicTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Topic"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <!-- SEO Tags -->
+        <LinearLayout
+            android:id="@+id/cardSeoTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvTagCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags"/>
+
+            <LinearLayout
+                android:id="@+id/chipGroupTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <Button
+                android:id="@+id/btnCopyTags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy Tags"/>
+        </LinearLayout>
+
+        <!-- Titles -->
+        <LinearLayout
+            android:id="@+id/cardTitles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvTitlesContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnCopyTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy Titles"/>
+        </LinearLayout>
+
+        <!-- Description -->
+        <LinearLayout
+            android:id="@+id/cardDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvDescriptionContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnCopyDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy Description"/>
+        </LinearLayout>
+
+        <!-- Hashtags -->
+        <LinearLayout
+            android:id="@+id/cardHashtags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvHashtagCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hashtags"/>
+
+            <LinearLayout
+                android:id="@+id/chipGroupHashtags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <Button
+                android:id="@+id/btnCopyHashtags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy Hashtags"/>
+        </LinearLayout>
+
+        <!-- Bonus Section -->
+        <LinearLayout
+            android:id="@+id/cardBonusTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ProgressBar
+                android:id="@+id/bonusLoadingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvBonusStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bonus Locked"/>
+
+            <Button
+                android:id="@+id/btnUnlockBonusTags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unlock Bonus"/>
+        </LinearLayout>
+
+        <!-- Share -->
+        <Button
+            android:id="@+id/btnShareResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Result"/>
+
+        <!-- Generate Again -->
+        <Button
+            android:id="@+id/btnGenerateAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Again"/>
+
+        <!-- Banner Ad -->
+        <FrameLayout
+            android:id="@+id/adBannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
